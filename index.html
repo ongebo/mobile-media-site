@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <title>Mobile Media</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway"
+  />
+  <link rel="shortcut icon" href="assets/app-logo.svg" type="image/x-icon" />
+  <style>
+    body,
+    h1 {
+      font-family: "Raleway", sans-serif;
+    }
+    body,
+    html {
+      height: 100%;
+    }
+    .bgimg {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
+        url("assets/background-2.jpg");
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+  <body>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+      <img
+        class="w3-margin"
+        src="assets/app-logo.svg"
+        alt="Logo"
+        width="64"
+        height="64"
+        srcset=""
+      />
+      <div class="w3-display-middle">
+        <h1 class="w3-jumbo w3-animate-top">MOBILE MEDIA</h1>
+        <hr class="w3-border-grey" style="margin: auto; width: 40%" />
+        <p>
+          <button
+            id="android-download-button"
+            class="w3-button w3-block w3-teal w3-round-large"
+          >
+            Download for Android
+          </button>
+        </p>
+        <p>
+          <button
+            id="ios-download-button"
+            class="w3-button w3-block w3-teal w3-round-large"
+            disabled
+          >
+            Download for iOS (coming soon)
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const androidButton = document.querySelector("#android-download-button");
+      const iOSButton = document.querySelector("#ios-download-button");
+      androidButton.addEventListener("click", (e) => {
+        window.open(""); // TODO: Add APK link here.
+      });
+      iOSButton.addEventListener("click", (e) => {
+        // TODO: Implement.
+      });
+    </script>
+  </body>
+</html>
